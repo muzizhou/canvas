@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画板</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+</head>
+<body>
+<img src="2.jpg" alt="" class="img">
+<div class="box">
+
+    <div class="tops">
+        <ul>
+            <li class="color">文件</li>
+            <li>画图</li>
+            <li>样式</li>
+            <li>颜色</li>
+            <li>线条宽度</li>
+            <li>擦除</li>
+        </ul>
+    </div>
+    <div class="bottoms">
+        <div class="lefts">
+            <ul class="xian">
+                <li class="new icon-xinjian iconfont">新建</li>
+                <li class="icon-fanhui iconfont">返回</li>
+                <li class="save icon-baocun iconfont">保存</li>
+            </ul>
+            <ul>
+                <li data-role="line" class="icon-agongjutianjiaxiantiao iconfont"></li>
+                <li data-role="rect" class="icon-juxing iconfont"></li>
+                <li data-role="arc" class="icon-yuan iconfont" ></li>
+                <li data-role="bian" class="icon-pentagon iconfont"></li>
+                <li data-role="jiao" class="icon-wujiaoxing iconfont"></li>
+                <li data-role="pen" class="icon-gangbi01 iconfont"></li>
+            </ul>
+            <ul>
+                <li data-role="stroke">边框</li>
+                <li data-role="fill">填充</li>
+            </ul>
+            <ul>
+                <li><input type="color" class="str"></li>
+                <li><input type="color" class="fill"></li>
+            </ul>
+            <ul>
+                <!--<li data-role="1">细</li>
+                <li data-role="5">中</li>
+                <li data-role="10">粗</li>-->
+                <li class="menu" style="border:1px solid #eee;z-index:888">
+                    <input type="range" max=500 min=1 step=0.1 value=1 style="width:60px" class="lineWidth"><br>
+                    <span data-role="lineWidth" class="getLine"></span>
+                </li>
+                <li> <input type="number" placeholder="请输入线条宽度" > </li>
+            </ul>
+            <ul>
+                <li class="icon-xiangpica iconfont"> <input type="number" placeholder="请输入橡皮擦大小" > </li>
+            </ul>
+        </div>
+        <div class="canvas">
+            <canvas width="713" height="473"></canvas>
+
+            <div class="copy"></div>
+            <div class="xp"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
